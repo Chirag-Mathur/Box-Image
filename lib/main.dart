@@ -163,7 +163,7 @@ class _HomeState extends State<Home> {
                         },
                         min: 100,
                         max: 300,
-                        divisions: 10,
+                        divisions: 20,
                         label: "$height",
                       ),
                     ),
@@ -181,7 +181,7 @@ class _HomeState extends State<Home> {
             },
             min: 100,
             max: 300,
-            divisions: 10,
+            divisions: 20,
             label: "$width",
           ),
           Row(
@@ -209,6 +209,10 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Text('Current Height: $height\n Current Width: $width '),
+          )
         ],
       ),
     );
